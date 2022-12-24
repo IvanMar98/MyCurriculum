@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    display: grid;
+    grid-template-areas: 
+    "secundary header"
+    ". rp"
+    ". experience"
+    ".formation";
+    grid-template-columns: 1fr, 2fr;
+
+
+
+}
+.header{
+    grid-area: header;
+}
+.section-rp{
+    grid-area: rp;
+}
+.section-experience{
+    grid-area: experience;
+}
+.section-formation{
+    grid-area: formation;
+}
+.section-sencundary{
+    grid-area: secundary;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header hr{
+    width: 100vh;
+}
