@@ -3,31 +3,40 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+main{
+    width: 75%;
+    margin: 2rem;
     display: grid;
     grid-template-areas: 
     "secundary header"
-    ". rp"
-    ". experience"
-    ".formation";
-    grid-template-columns: 1fr, 2fr;
-
-
-
+    "secundary principal";
+    grid-template-columns: 220px 1fr ;
 }
+/* area principal */
+.principal{
+    grid-area: principal;
+}
+/*area secundaria*/
+.secundary{
+    grid-area: secundary;
+}
+
+/*areas dentro del area principal*/
 .header{
     grid-area: header;
-}
+} 
 .section-rp{
     grid-area: rp;
 }
 .section-experience{
-    grid-area: experience;
-}
-.section-formation{
     grid-area: formation;
 }
 .section-sencundary{
-    grid-area: secundary;
+    grid-area: section-secundary;
 }
 
 .header{
@@ -35,8 +44,37 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-transform: uppercase;
 }
 
 .header hr{
     width: 100vh;
+}
+img{
+    width: 150px;
+}
+
+.section-sencundary{
+    width: 100vh;
+    display: grid;
+    align-content: space-around;
+    justify-content: center;
+    
+}
+.secundary{
+    width: 100%;
+    display: flex;
+    background-color: darkolivegreen;
+}
+
+.section-rp{
+    text-transform: uppercase;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+.imagen{
+    display: flex;
+    justify-content: center;
 }
