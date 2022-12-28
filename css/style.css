@@ -131,6 +131,7 @@ section h1{
 }
 .item-formation{
     background-color: var(--color-secundary);
+    padding: 20px;
 }
 .header{
     background-color: var(--color-secundary);
