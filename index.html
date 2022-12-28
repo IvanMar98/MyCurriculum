@@ -1,74 +1,327 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MyCurriculum</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+  </head>
 
-<body>
+  <body>
     <main>
-        <header class="header">
-            <h1>Martinez Del Angel Manuel Ivan</h1>
-            <hr>
-        </header>
-        <div class="principal">
-            <section class="section-rp">
-                <h2>resumen profesional</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatem, at earum delectus itaque
-                    omnis, dolor tempore quisquam repudiandae odio maxime quibusdam? Unde, labore. Aliquid modi tempore
-                    dolor doloremque voluptate!</p>
-                <hr>
-            </section>
-            <section class="section-experience">
-                <h2>experencia</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatem, at earum delectus itaque
-                    omnis, dolor tempore quisquam repudiandae odio maxime quibusdam? Unde, labore. Aliquid modi tempore
-                    dolor doloremque voluptate!</p>
-                <hr>
-            </section>
-            <section class="section-formation">
-                <h2>formacion</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatem, at earum delectus itaque
-                    omnis, dolor tempore quisquam repudiandae odio maxime quibusdam? Unde, labore. Aliquid modi tempore
-                    dolor doloremque voluptate!</p>
-                <hr>
-            </section>
+      <header class="header">
+        <h1>Martinez Del Angel Manuel Ivan</h1>
+        <h3>Desarrollador Front End</h3>
+      </header>
+      <section class="section-rp">
+        <h1>resumen profesional</h1>
+        <p>
+          Programador con 1 año de experiencia en el desarrollo Frontend. Uno de
+          mis proyectos mas grandes fue dentro del grupo bancario BBVA,
+          trabajando con librerias para desarrollar Web Components, como los son
+          <span>Polymer</span> y <span> Lit-Element</span>.
+        </p>
+      </section>
+      <section class="section-experience">
+        <h1>experencia</h1>
+        <h2>Desarrollador Web Frontend</h2>
+        <h3>Empresa Gonet Mexico S.A. de C.V.</h3>
+        <ul>
+          <li>
+            Participe en un proyecto cerrado para uno de los clientes mas
+            importantes para esta consultoria que es BBVA.
+          </li>
+          <li>Diseñe componentes web para la aplicacion movil BBVA Mexico</li>
+          <li>
+            Participe en la migracion de componentes desarrollados en la
+            librerira Polymer hacia Lit-Element
+          </li>
+          <li>
+            Realice pruebas de Unit Test asi como Test E2E para comprobar el
+            buen funcionamiento de los flujos de la aplicacion
+          </li>
+        </ul>
+      </section>
+      <section class="section-formation">
+        <h1>formacion</h1>
+        <div class="container-formation">
+          <div class="item-formation">
+            <h1>Tecnico en Programacion</h1>
+            <h2>
+              Centro de Estudios Tecnologicos Industrial y de Servicios No.54.
+              "Guadalupe Victoria"
+            </h2>
+            <h3>2013 - 2016</h3>
+          </div>
+          <div class="item-formation">
+            <h1>Ingenieria en Sistemas Computacionales</h1>
+            <h2>Tecnologico de Estudios Superiores de Ecatepec</h2>
+            <h3>2017 - 2023</h3>
+          </div>
         </div>
-        <div class="secundary">
-            <section class="section-sencundary">
-                <article>
-                    <div class="imagen">
-                        <img src="img/foto_cv_lc_es_4.jpg" alt="">
-                    </div>
-                    <div>
-                        <button>Saber mas sobre mi</button>
-                    </div>
-                    <hr>
-                </article>
-                <article>
-                    <h2>Contacto</h2>
-                    <ul>
-                        <li>5563335106</li>
-                        <li>ivan_martnez@hotmail.com</li>
-                    </ul>
-                    <hr>
-                </article>
-                <article>
-                    <h2>skills</h2>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>SVG Animations</li>
-                    </ul>
-                </article>
-            </section>
-        </div>
-    </main>
-</body>
+      </section>
 
+      <section class="section-sencundary">
+        <article class="profile">
+          <div class="imagen">
+            <img src="img/foto_cv_lc_es_4.jpg" alt="" />
+          </div>
+        </article>
+        <hr />
+        <article class="contact">
+          <h1>Contacto</h1>
+          <ul class="items">
+            <li>
+              <span class="material-symbols-outlined"> call </span> 5563335106
+            </li>
+            <li>
+              <span class="material-symbols-outlined"> mail </span>
+              ivan_martnez@hotmail.com
+            </li>
+          </ul>
+        </article>
+        <hr />
+        <article class="skills">
+          <h1>Skills</h1>
+          <ul>
+            <li>
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.902 27.201L3.655 2H28.345L26.095 27.197L15.985 30L5.902 27.201Z"
+                  fill="#E44F26"
+                />
+                <path
+                  d="M16 27.858L24.17 25.593L26.092 4.061H16V27.858Z"
+                  fill="#F1662A"
+                />
+                <path
+                  d="M16 13.407H11.91L11.628 10.242H16V7.151H15.989H8.25L8.324 7.981L9.083 16.498H16V13.407Z"
+                  fill="#EBEBEB"
+                />
+                <path
+                  d="M16 21.434L15.986 21.438L12.544 20.509L12.324 18.044H10.651H9.22099L9.65399 22.896L15.986 24.654L16 24.65V21.434Z"
+                  fill="#EBEBEB"
+                />
+                <path
+                  d="M15.989 13.407V16.498H19.795L19.437 20.507L15.989 21.437V24.653L22.326 22.896L22.372 22.374L23.098 14.237L23.174 13.407H22.341H15.989Z"
+                  fill="white"
+                />
+                <path
+                  d="M15.989 7.151V9.071V10.235V10.242H23.445H23.455L23.517 9.548L23.658 7.981L23.732 7.151H15.989Z"
+                  fill="white"
+                />
+              </svg>
+              HTML
+              <div class="skill_item">
+                <div class="skill_porcent skill_porcent--70"></div>
+              </div>
+            </li>
+            <li>
+              <svg
+                width="33"
+                height="33"
+                viewBox="0 0 33 33"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.90201 27.201L3.65601 2H28.344L26.095 27.197L15.985 30L5.90201 27.201Z"
+                  fill="#1572B6"
+                />
+                <path
+                  d="M16 27.858L24.17 25.593L26.092 4.061H16V27.858Z"
+                  fill="#33A9DC"
+                />
+                <path
+                  d="M16 13.191H20.09L20.372 10.026H16V6.935H16.011H23.75L23.676 7.764L22.917 16.282H16V13.191Z"
+                  fill="white"
+                />
+                <path
+                  d="M16.019 21.218L16.005 21.222L12.563 20.292L12.343 17.827H10.67H9.24001L9.67301 22.68L16.004 24.438L16.019 24.434V21.218Z"
+                  fill="#EBEBEB"
+                />
+                <path
+                  d="M19.827 16.151L19.455 20.29L16.008 21.22V24.436L22.344 22.68L22.391 22.158L22.928 16.151H19.827Z"
+                  fill="white"
+                />
+                <path
+                  d="M16.011 6.935V8.855V10.018V10.026H8.55501H8.54501L8.48301 9.331L8.34201 7.764L8.26801 6.935H16.011Z"
+                  fill="#EBEBEB"
+                />
+                <path
+                  d="M16 13.191V15.111V16.274V16.282H12.611H12.601L12.539 15.587L12.399 14.02L12.325 13.191H16Z"
+                  fill="#EBEBEB"
+                />
+              </svg>
+              CSS
+              <div class="skill_item">
+                <div class="skill_porcent skill_porcent--50"></div>
+              </div>
+            </li>
+            <li>
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4 2H28.69L26.45 27.19L16.35 30L6.25001 27.19L4 2Z"
+                  fill="#F0DB4F"
+                />
+                <path
+                  d="M16 4H26.09L24.17 25.53L16 27.8V4Z"
+                  fill="#FFF329"
+                  fill-opacity="0.59"
+                />
+                <path
+                  d="M16 7V8.92V10.084V10.091H23.456H23.466L23.528 9.397L23.669 7.83L23.743 7H16Z"
+                  fill="white"
+                />
+                <path
+                  d="M16 13.256H11.91L12.5 10.091H16V7H15.989H9.5L9.083 16.347H16V13.256Z"
+                  fill="#EBEBEB"
+                />
+                <path
+                  d="M16 13.2564V16.3438H19.7796L19.448 20.1L16 21.03V24.246L22.337 22.489L22.383 21.967L23.109 14.355V13.2564L16 13.2564Z"
+                  fill="white"
+                />
+                <path
+                  d="M16 21.0291L12.323 20.465L12.103 18H10.43H9L9.433 22.852L16 24.2384V21.0291Z"
+                  fill="#EBEBEB"
+                />
+              </svg>
+              JavaScript
+              <div class="skill_item">
+                <div class="skill_porcent skill_porcent--45"></div>
+              </div>
+            </li>
+            <li>
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M28.1333 14.7333L17.2667 3.86667C16.9333 3.53334 16.4667 3.33334 16 3.33334C15.5333 3.33334 15.0667 3.53334 14.7333 3.86667L12.4 6.2L15.1333 8.93334C15.4 8.8 15.6667 8.73334 16 8.73334C17.1333 8.73334 18 9.6 18 10.7333C18 11.0667 17.9333 11.3333 17.8 11.6L20.4667 14.2667C20.7333 14.1333 21 14.0667 21.3333 14.0667C22.4667 14.0667 23.3333 14.9333 23.3333 16.0667C23.3333 17.2 22.4667 18.0667 21.3333 18.0667C20.2 18.0667 19.3333 17.2 19.3333 16.0667C19.3333 15.7333 19.4 15.4667 19.5333 15.2L16.8667 12.5333C16.8 12.5333 16.7333 12.6 16.6667 12.6V19.5333C17.4667 19.8 18 20.5333 18 21.4C18 22.5333 17.1333 23.4 16 23.4C14.8667 23.4 14 22.5333 14 21.4C14 20.5333 14.5333 19.8 15.3333 19.5333V12.5333C14.5333 12.2667 14 11.5333 14 10.6667C14 10.3333 14.0667 10.0667 14.2 9.8L11.4667 7.06667L3.86668 14.7333C3.53334 15.0667 3.33334 15.5333 3.33334 16C3.33334 16.4667 3.53334 16.9333 3.86668 17.2667L14.7333 28.1333C15.0667 28.4667 15.5333 28.6667 16 28.6667C16.4667 28.6667 16.9333 28.4667 17.2667 28.1333L28.1333 17.2667C28.4667 16.9333 28.6667 16.4667 28.6667 16C28.6667 15.5333 28.4667 15.0667 28.1333 14.7333Z"
+                  fill="#F4511E"
+                />
+              </svg>
+              Git
+              <div class="skill_item">
+                <div class="skill_porcent skill_porcent--50"></div>
+              </div>
+            </li>
+            <li>
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.30625 31.6375C6.7 31.6375 5.3875 30.3625 5.3875 28.8V26.4125L4.125 25.4562V17.1812H5.3875V4.83748C5.3875 3.27498 6.69375 1.99998 8.30625 1.99998H11.8625V1.35623H19.6562L20.325 1.99998H25.4875C27.0937 1.99998 28.4062 3.27498 28.4062 4.83748V9.86248L28.9 10.3375V17.925H28.4062V28.7937C28.4062 30.3562 27.1 31.6312 25.4875 31.6312H8.30625V31.6375Z"
+                  fill="#BFBFBF"
+                />
+                <path
+                  d="M7.28751 30.6437C5.68126 30.6437 4.36876 29.3687 4.36876 27.8062V25.4187L3.10626 24.4687V16.1875H4.36876V3.84374C4.36876 2.28124 5.67501 1.00624 7.28751 1.00624H10.8438V0.362488H18.6375L19.3 1.00624H24.4625C26.0688 1.00624 27.3813 2.28124 27.3813 3.84374V8.87499L27.875 9.34999V16.9375H27.3813V27.8062C27.3813 29.3687 26.075 30.6437 24.4625 30.6437H7.28751V30.6437Z"
+                  fill="white"
+                />
+                <path
+                  d="M24.325 29.6812H7.42501C6.28126 29.6812 5.35626 28.7562 5.35626 27.6125V4.03747C5.35626 2.89372 6.28126 1.96872 7.42501 1.96872H24.325C25.4688 1.96872 26.3938 2.89372 26.3938 4.03747V27.6125C26.3938 28.7562 25.4688 29.6812 24.325 29.6812Z"
+                  fill="#16896B"
+                />
+                <path
+                  d="M6.17502 27.3187V4.33746C6.17502 3.46871 6.87502 2.76871 7.74377 2.76871H24C24.8688 2.76871 25.5688 3.46871 25.5688 4.33746V27.3187C25.5688 28.1875 24.8688 28.8875 24 28.8875H7.74377C6.88127 28.8875 6.17502 28.1812 6.17502 27.3187Z"
+                  fill="#49EBC8"
+                />
+                <path
+                  d="M26.8813 15.975V9.74998L18.225 1.32498H11.8313L26.8813 15.975Z"
+                  fill="#2EBC9A"
+                />
+                <path
+                  d="M11.8313 1.32498V1.96873H12.4938L11.8313 1.32498Z"
+                  fill="#096047"
+                />
+                <path
+                  d="M26.3938 15.5V15.975H26.8813L26.3938 15.5Z"
+                  fill="#096047"
+                />
+                <path
+                  d="M17.3375 23.9937H4.10001V17.1562H17.3438C19.2063 17.1562 20.7188 18.6687 20.7188 20.5312V20.6187C20.7125 22.4812 19.2063 23.9937 17.3375 23.9937Z"
+                  fill="#2EBC9A"
+                />
+                <path
+                  d="M4.10001 23.9937L5.35626 24.9437V23.9937H4.10001Z"
+                  fill="#096047"
+                />
+                <path
+                  d="M10.0938 21.3125C10.0938 21.1875 10.05 21.0812 9.95627 21C9.86252 20.9187 9.70002 20.85 9.46877 20.7812C9.13127 20.6937 8.87502 20.575 8.69377 20.425C8.51252 20.2812 8.41877 20.0875 8.41877 19.85C8.41877 19.6062 8.51877 19.4062 8.71877 19.2437C8.91877 19.0875 9.17502 19.0062 9.48752 19.0062C9.82502 19.0062 10.0938 19.0937 10.2938 19.2687C10.4938 19.4437 10.5938 19.6625 10.5875 19.9187L10.5813 19.9312H10.0813C10.0813 19.7687 10.025 19.6437 9.91877 19.55C9.81252 19.4562 9.66252 19.4062 9.48127 19.4062C9.30627 19.4062 9.16877 19.4437 9.07502 19.525C8.98127 19.6062 8.93127 19.7125 8.93127 19.8375C8.93127 19.9562 8.98127 20.05 9.08752 20.125C9.19377 20.2 9.36252 20.275 9.60627 20.3375C9.93127 20.425 10.1813 20.55 10.35 20.7C10.5188 20.8562 10.6063 21.05 10.6063 21.2875C10.6063 21.5375 10.5063 21.7375 10.3 21.8875C10.1 22.0375 9.83127 22.1125 9.50002 22.1125C9.18127 22.1125 8.90627 22.0312 8.67502 21.8687C8.43752 21.7062 8.32502 21.475 8.33127 21.175L8.33752 21.1625H8.83752C8.83752 21.3437 8.90002 21.4812 9.03127 21.575C9.16252 21.6687 9.31877 21.7125 9.50002 21.7125C9.68127 21.7125 9.82502 21.675 9.93127 21.6C10.0438 21.5437 10.0938 21.4375 10.0938 21.3125Z"
+                  fill="white"
+                />
+                <path
+                  d="M12.2813 21.2687L12.3375 21.4875H12.35L12.4063 21.2687L13.15 19.0562H13.7063L12.5938 22.0875H12.1L10.9875 19.0562H11.5438L12.2813 21.2687Z"
+                  fill="white"
+                />
+                <path
+                  d="M16.4688 21.6812C16.3813 21.8 16.2438 21.9062 16.0563 21.9937C15.8688 22.0875 15.625 22.1312 15.3313 22.1312C14.9625 22.1312 14.6625 22.0187 14.425 21.7875C14.1875 21.5562 14.0688 21.2562 14.0688 20.8937V20.2625C14.0688 19.8937 14.1813 19.6 14.4125 19.3687C14.6438 19.1375 14.9375 19.025 15.3 19.025C15.6625 19.025 15.9438 19.1125 16.15 19.2937C16.35 19.4687 16.45 19.7062 16.4438 19.9875L16.4375 20H15.9438C15.9438 19.8312 15.8875 19.6937 15.7813 19.5875C15.675 19.4812 15.5188 19.4312 15.3125 19.4312C15.1 19.4312 14.925 19.5125 14.7938 19.6687C14.6625 19.825 14.5938 20.025 14.5938 20.2687V20.9062C14.5938 21.15 14.6625 21.35 14.8 21.5062C14.9375 21.6625 15.1188 21.7437 15.3375 21.7437C15.5063 21.7437 15.6375 21.725 15.7313 21.6875C15.8313 21.65 15.9 21.6062 15.95 21.5562V20.9312H15.3V20.55H16.475V21.6812H16.4688Z"
+                  fill="white"
+                />
+              </svg>
+              Animations SVG
+              <div class="skill_item">
+                <div class="skill_porcent skill_porcent--35"></div>
+              </div>
+            </li>
+            <li>
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21.6274 22.1325C21.7049 22.1373 21.7884 22.1471 21.8719 22.1471C23.0549 22.1483 24.2391 22.1412 25.422 22.1531C25.6811 22.1556 25.7586 22.0671 25.7453 21.8189C25.7284 21.4956 25.7416 21.1711 25.7416 20.7716C27.0844 21.7596 28.3824 22.7137 29.7143 23.6944C28.3921 24.6679 27.0941 25.6232 25.7416 26.6197C25.7416 26.2432 25.7416 25.932 25.7416 25.6208C25.7416 25.2188 25.7416 25.2176 25.3506 25.2176C17.7867 25.2176 10.2216 25.2176 2.65773 25.2176C2.29207 25.2176 2.29207 25.2176 2.29207 24.8495C2.29207 24.0516 2.30297 23.2537 2.28601 22.457C2.27995 22.1979 2.3635 22.1398 2.61172 22.141C6.67879 22.1483 10.7459 22.1542 14.813 22.1435C16.898 22.1375 18.5434 21.2741 19.6319 19.4773C21.5959 16.2324 19.5484 11.9824 15.7852 11.4352C12.8793 11.0126 10.178 12.9632 9.68521 15.9188C9.63315 16.2263 9.62952 16.5423 9.59925 16.9128C10.0751 16.8487 10.5061 16.7893 10.9941 16.7239C10.2301 18.2011 9.4927 19.6274 8.74442 21.0731C7.59779 19.8914 6.46812 18.7278 5.36387 17.5897C5.64114 17.5436 6.00922 17.4904 6.37367 17.4141C6.44269 17.3995 6.5444 17.2882 6.54198 17.224C6.52138 16.4503 6.57467 15.6851 6.72602 14.9259C6.73086 14.9029 6.71996 14.8762 6.71269 14.8314C5.9741 14.7055 5.28879 14.4391 4.66765 14.0105C3.1493 12.9595 2.35502 11.0041 2.72795 9.2218C3.13356 7.27967 4.59863 5.82792 6.49233 5.46953C7.72008 5.23826 8.85823 5.45856 9.91526 6.10762C10.1017 6.22264 10.2155 6.2396 10.3378 6.03982C10.4093 5.92238 10.517 5.82794 10.6405 5.68506C10.7943 6.30499 10.9384 6.88496 11.0813 7.46494C11.1297 7.65989 11.1672 7.85845 11.2241 8.05097C11.2859 8.25922 11.2229 8.35246 11.0026 8.33793C10.3657 8.29434 9.72758 8.25559 9.0907 8.21322C8.9333 8.20225 8.77711 8.18538 8.5749 8.16599C8.73231 7.96743 8.87518 7.78943 9.03137 7.5945C8.68754 7.33289 8.30856 7.20212 7.91384 7.13795C6.00562 6.82556 4.32382 8.29184 4.36256 10.2231C4.39162 11.7051 5.64117 13.0297 7.11713 13.1556C7.30844 13.1714 7.37503 13.0745 7.44889 12.9316C8.49502 10.9241 10.0703 9.50506 12.2134 8.76647C17.1716 7.05682 22.3478 10.1201 23.3031 15.1341C23.7741 17.6029 23.2377 19.8574 21.74 21.8782C21.6988 21.9339 21.6613 21.9933 21.625 22.0526C21.6176 22.0636 21.6275 22.0853 21.6334 22.1313L21.6274 22.1325Z"
+                  fill="black"
+                />
+              </svg>
+              Methodology Scrum
+              <div class="skill_item">
+                <div class="skill_porcent skill_porcent--90"></div>
+              </div>
+            </li>
+          </ul>
+        </article>
+        <hr />
+        <article>
+          <h1>Idiomas</h1>
+          <ul>
+            <li>
+              Ingles
+              <div class="idioma_item">
+                <div class="idioma_porcent idioma_porcent--50"></div>
+              </div>
+            </li>
+          </ul>
+        </article>
+      </section>
+    </main>
+  </body>
 </html>
